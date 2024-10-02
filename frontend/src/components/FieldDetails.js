@@ -18,6 +18,7 @@ const FieldDetails = ({
     .join(", ");
 
   const handleDelete = async (name) => {
+    alert("Dleting the field");
     try {
       // Call the delete endpoint with the field name
       await fetch(
