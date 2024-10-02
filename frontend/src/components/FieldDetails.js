@@ -137,9 +137,9 @@ const FieldDetails = ({
             </div>
           </div>
           <div style={{ display: "flex", gap: 10, marginTop: 450 }}>
-            <button className="btn btn-primary" onClick={handleRename}>
-              Rename Field
-            </button>
+            // <button className="btn btn-primary" onClick={handleRename}>
+            //   Rename Field
+            // </button>
             <button
               className="btn btn-primary"
               onClick={() => handleDelete(fieldName)}            >
