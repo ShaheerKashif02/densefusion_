@@ -18,7 +18,7 @@ const FieldDetails = ({
     .join(", ");
 
   const handleDelete = async (name) => {
-    alert("Dleting the field");
+
     try {
       // Call the delete endpoint with the field name
       await fetch(
@@ -138,9 +138,7 @@ const FieldDetails = ({
             </div>
           </div>
           <div style={{ display: "flex", gap: 10, marginTop: 450 }}>
-            // <button className="btn btn-primary" onClick={handleRename}>
-            //   Rename Field
-            // </button>
+
             <button
               className="btn btn-primary"
               onClick={() => handleDelete(fieldName)}            >
