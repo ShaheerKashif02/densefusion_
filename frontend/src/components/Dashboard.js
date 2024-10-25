@@ -32,7 +32,7 @@ const Dashboard = ({ user }) => {
   const [indexValues, setIndexValues] = useState({});
   const [snackBarOpen, setSnackBarOpen] = useState(false);
   const [addField, setAddField] = useState(true);
-  const [mapType, setMapType] = useState("SATELLITE"); // Default to ROADMAP
+  const [mapType, setMapType] = useState("ROADMAP"); // Default to ROADMAP
   const [showMenu, setShowMenu] = useState(true);
 
   const [theme, setTheme] = useState(
@@ -59,7 +59,6 @@ const Dashboard = ({ user }) => {
   useEffect(() => {
     DataFetch();
   }, []);
-
   useEffect(() => {
     if (polygons == null) {
       // alert("No Polygons")
